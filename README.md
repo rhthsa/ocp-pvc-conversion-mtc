@@ -173,41 +173,41 @@ OpenShift PVC Storage Class conversion using MTC
 - Go back to OCP web console, in project "my-database-app"
 - Go to Storage -> PersistentVolumeClaim
 - Verify new PVC created with name related to original PVC ( origin-name with "-new") and desired storage class
-![](images/stage6.png)  
+![screen](images/stage6.png)  
 - (optional) go back to application, create some updated on article
-![](images/stage8.png)  
+![screen](images/stage8.png)  
 ### 5. Application Migration : Cutover
 - Go to migration toolkit dashboard
 - Go to migration plans, click 3 dots icon at the right of the plan
 - Select Cutover
-![](images/cut1.png)  
+![screen](images/cut1.png)  
 - Review Cutover warning
 - click **"Migrate"**
-![](images/cut2.png)  
+![screen](images/cut2.png)  
 - By click on plan, you can monitor process of PVC cutover
-![](images/cut4.png)  
+![screen](images/cut4.png)  
 - Go to application, review persistent data are valid from staged and accurrate
-![](images/cut5.png)  
+![screen](images/cut5.png)  
 - Test create new data after cutover
-![](images/cut6.png)  
+![screen](images/cut6.png)  
 - Confirm application are read and writh PVC data are functional
-![](images/cut7.png)  
+![screen](images/cut7.png)  
 - Go to Workloads-> DeploymentConfigs -> postgresql -> YAML tab
 - verify spec volumes mapping are change to new PVC
-![](images/cut8.png)  
+![screen](images/cut8.png)  
 ### 5. Application Migration : Rollback
 - Go to migration toolkit dashboard
 - Go to migration plans, click 3 dots icon at the right of the plan
 - Select **"Rollback"**
-![](images/roll1.png)
+![screen](images/roll1.png)
 - Review rollback warning
 - Click "Rollback"
-![](images/roll2.png)  
+![screen](images/roll2.png)  
 - wait untill rollback process finished
-![](images/roll3.png)  
-![](images/roll4.png)  
+![screen](images/roll3.png)  
+![screen](images/roll4.png)  
 - Go to OpenShift web console
 - Verify only origin PVC left in namespace
-![](images/roll5.png)
+![screen](images/roll5.png)
 - Check with deployment yaml, PVC mapping are converted to original PVC
-![](images/roll7.png)  
+![screen](images/roll7.png)  
