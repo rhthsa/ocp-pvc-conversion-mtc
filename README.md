@@ -40,6 +40,7 @@ OpenShift PVC Storage Class conversion using MTC
 - locate to MigrationController in operation menu
 ![screen](images/mtc7.png)  
 - click "Create MigrationController"
+
 ![screen](images/mtc8.png)  
 - Click **"Create"**
 ![screen](images/mtc9.png)  
@@ -210,4 +211,6 @@ OpenShift PVC Storage Class conversion using MTC
 - Verify only origin PVC left in namespace
 ![screen](images/roll5.png)
 - Check with deployment yaml, PVC mapping are converted to original PVC
-![screen](images/roll7.png)  
+![screen](images/roll7.png)
+- Check on application, data written on migrated PVC before rollback are missing (revert to before cutover)
+![](images/roll8.png)
