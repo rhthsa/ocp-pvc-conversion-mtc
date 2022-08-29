@@ -166,7 +166,7 @@ OpenShift PVC Storage Class conversion using MTC
 - Access MTC URL, go to Migration plans
 - select plan, click three dots icon on the right, select **"Stage"**
 ![screen](images/stage1.png)  
-- confirm precedure description, click "Stage"
+- confirm procedure description, click "Stage"
 ![screen](images/stage2.png)
 - Wait for staging to complete, click Migrations icon for more process detail
 ![screen](images/stage4.png)  
